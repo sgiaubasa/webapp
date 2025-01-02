@@ -1,0 +1,132 @@
+
+        /* Aplica el fondo celeste a toda la página */
+        body {
+            background-color: #ADD8E6; /* Fondo celeste */
+            font-family: Arial, sans-serif; /* Fuente más moderna */
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Alineación al inicio (izquierda) */
+            justify-content: flex-start;
+            padding-top: 20px;
+            width: 100%; /* Asegura que ocupe todo el ancho */
+            box-sizing: border-box;
+        }
+
+        /* Estilo para la imagen */
+        img {
+            display: block;
+            margin-left: 20px;
+            width: 200px; /* Tamaño de la imagen ajustado */
+            height: auto;
+        }
+
+        /* Estilo para el h1 */
+        h1 {
+            text-align: center;
+            background-color: #91c2d3; /* Fondo celeste para el h1 */
+            padding: 15px 0; /* Añadir espaciado */
+            font-size: 3em; /* 3em tres veces el tamaño de la fuente utilizada */
+            margin: 0 0 0 25%; /* arriba derecha abajo izquiera */
+            color: #003366; /* Color del texto */
+            width: 50%; /* Ocupa todo el ancho */
+            box-sizing: border-box;
+            border: 3px black solid;
+            border-radius: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-shadow: 3px 5px 3px;
+        
+            
+        }
+
+        /* Contenedor Flex para los h2 y a */
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Asegura que los elementos se envuelvan en nuevas líneas */
+            gap: 20px; /* Espacio entre las cajas */
+            justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+            margin: 20px 0;
+            width: 100%; /* Ajusta el ancho del contenedor para que ocupe todo el ancho */
+            box-sizing: border-box;
+        }
+
+        /* Estilo para las cajas */
+        .box {
+            background-color: #91c2d3; /* Fondo celeste para las cajas */
+            color: #2816c9; /* Color de texto */
+            padding: 15px 20px;
+            border-radius: 10px; /* Bordes redondeados */
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            transition: all 0.3s ease; /* Transición suave */
+            width: 30%; /* Establecer ancho fijo para las cajas */
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Alinea el contenido al centro */
+        }
+
+        /* Efecto hover para las cajas */
+        .box:hover {
+            transform: translateY(-10px); /* Movimiento hacia arriba al pasar el mouse */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+        }
+
+        /* Estilo para los enlaces dentro de las cajas (botones) */
+        a {
+            display: inline-block;
+            background-color: #0d90e7; /* Fondo azul oscuro */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 10px;
+            font-size: 1.1em;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+            transition: all 0.3s ease; /* Transición suave */
+            width: auto; /* El ancho del enlace debe ser el del contenido */
+            margin-left: 0; /* Eliminar margen de la izquierda */
+        }
+
+        /* Efecto hover para los enlaces (botones) */
+        a:hover {
+            background-color: #0056b3; /* Cambia el fondo a un azul más oscuro */
+            transform: translateY(-5px); /* Movimiento hacia arriba */
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Sombra más fuerte */
+        }
+
+        /* Separadores horizontales */
+        hr {
+            border: 0;
+            border-top: 1px solid #003366;
+            margin: 20px 0;
+            width: 100%; /* Ajusta el ancho del separador */
+        }
+
+        /* Espaciado adicional */
+        br {
+            margin-bottom: 10px;
+        }
+
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .box {
+                width: calc(50% - 20px); /* En pantallas pequeñas, cada caja ocupa la mitad */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .box {
+                width: 100%; /* En pantallas muy pequeñas, cada caja ocupa el 100% */
+            }
+
+        }
+        h2{
+            text-align: center;
+            
+        }
+   
+
+
